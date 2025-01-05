@@ -1,0 +1,18 @@
+theme: bulma-clean-theme
+
+# Configuration du thème
+bulma_clean_theme:
+  accent_color: "#ff9900" # Personnalisez cette couleur si besoin
+  header_color: "#333333" # Couleur de l'en-tête
+  footer_color: "#222222" # Couleur du pied de page
+  display_title: true      # Affiche le titre du site
+  display_logo: false      # Remplacez par `true` si vous utilisez un logo
+
+# URL de votre site (remplacez par votre propre URL)
+url: "https://votre-nom.github.io"
+baseurl: ""
+
+# Configurations Jekyll
+markdown: kramdown
+kramdown:
+  input: GFM
