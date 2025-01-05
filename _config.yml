@@ -9,7 +9,8 @@ bulma_clean_theme:
   display_logo: false      # Remplacez par `true` si vous utilisez un logo
 
 # URL de votre site (remplacez par votre propre URL)
-url: "https://votre-nom.github.io"
+# url: "https://votre-nom.github.io"
+url: "https://clementtoni.github.io/test-bulman/"
 baseurl: ""
 
 # Configurations Jekyll
