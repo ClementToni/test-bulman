@@ -5,12 +5,13 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Efficient server solution',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/server-meshing.png').default,
     description: (
       <>
         Server meshing, is today the most efficient solution to handle a large number of players in a single game world.
       </>
     ),
+    type: 'png'
   },
   {
     title: 'Implementable in your project',
@@ -20,6 +21,7 @@ const FeatureList = [
         Celte is a server meshing solution under the form of an <code>SDK</code>, Implementable in any custom game engine.
       </>
     ),
+    type: 'svg'
   },
   {
     title: 'Scalable',
@@ -29,14 +31,21 @@ const FeatureList = [
         Celte is designed to be scalable and can adapt to the growth of your project.
       </>
     ),
+    type: 'svg'
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({Svg, title, description, type}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+      {
+        type === 'svg' ? (
+          <Svg className={styles.featureSvg} role="img" />
+        ) : (
+          <img src={Svg} alt={title} className={styles.featureSvg} />
+        )
+      }
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
