@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Celte system',
+  title: 'Celte System',
   tagline: 'Server Meshing solution',
   favicon: 'img/favicon.ico',
 
@@ -99,6 +99,8 @@ const config = {
       footer: {
         style: 'dark',
         links: [
+          {
+          },
           {
             title: 'Docs',
             items: [

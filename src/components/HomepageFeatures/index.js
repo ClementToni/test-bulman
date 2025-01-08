@@ -4,7 +4,7 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Efficient server solution',
+    title: 'Server Meshing Solution',
     Svg: require('@site/static/img/server-meshing.png').default,
     description: (
       <>
@@ -14,7 +14,7 @@ const FeatureList = [
     type: 'png'
   },
   {
-    title: 'Implementable in your project',
+    title: 'Implementable in your Project',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
@@ -39,13 +39,13 @@ function Feature({Svg, title, description, type}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-      {
+      {/* {
         type === 'svg' ? (
           <Svg className={styles.featureSvg} role="img" />
         ) : (
           <img src={Svg} alt={title} className={styles.featureSvg} />
         )
-      }
+      } */}
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
@@ -59,7 +59,17 @@ export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
-        <div className="row">
+        <div className="text--center padding-horiz--md">
+          <Heading as="h3" className={clsx('margin-bottom--lg margin-top--lg', styles.featureCard)}>
+            What is Celte?
+          </Heading>
+          <p>
+            Celte is a server meshing solution under the form of an SDK. It is already implemented in <a href="https://godotengine.org" target="_blank" rel="noopener noreferrer">Godot Engine</a>. And can be integrated in any custom game engine.
+          </p>
+        </div>
+          <div className="margin-top--lg">
+          </div>
+        <div className={clsx('margin-bottom--lg margin-top--lg row', styles.featureCard)}>
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
