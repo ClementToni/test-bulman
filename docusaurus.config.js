@@ -121,10 +121,6 @@ const config = {
                 label: 'Discord',
                 href: 'https://discordapp.com/invite/celte-team',
               },
-              // {
-              //   label: 'X',
-              //   href: 'https://x.com/docusaurus',
-              // },
             ],
           },
           {
