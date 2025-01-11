@@ -30,12 +30,12 @@ go to the `celte-system` folder and run the following command:
 dotnet run --config configFile.yml
 ```
 
-The `configFile.yml` is a file that contains the configuration of the different server nodes.
-it must have at least:
-
-    ``kafka_brokers: "KAFKA_IP:KAFKA_PORT" ``
-    example :
-    ``kafka_brokers: "192.168.123.159:80"``
+The `configFile.yml` is a file that contains the configuration of the different grapes
+```
+grapes:
+    - LeChateauDuMechant
+    - LeChateauDuGentil
+```
 
 ## Godot
 
@@ -93,7 +93,7 @@ MAC OS users must install the following packages:
 To easily run the project, you can use the `run` script in the `celte-system` folder.
 
 ```bash
-./run (--cpp (SN), --kafka, --master)
+./automations/run (--pulsar, --master)
 ```
 
 # Docker:

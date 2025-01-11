@@ -8,7 +8,7 @@ This is an overview of how Celte is designed to run in a dockerized environment.
 
 ## Docker Pulsar
 
-Celte uses kafka as a communication protocol. To run kafka in a docker container, you can use the following command:
+Celte uses pulsar as a communication protocol. To run pulsar in a docker container, you can use the following command:
 
 ```bash
 ./automation/run --pulsar
